@@ -1,0 +1,47 @@
+<!--10 Skapa en HTML-sida med en stor svart rektangel som är horisontellt centrerad och täcker ca 70% av skärmens bredd. Använd ett div-element och CSS för att placera det rätt. 
+Skapa en vit rektangel som är inuti den svarta, men som följer med när man scrollar nedåt på sidan.
+Skapa en grön rektangel som ligger delvis över den svarta och den vita. Använd relativ positionering.
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Rectangle Time</title>
+    <style>
+        .container {
+            height:1000px;
+            width: auto;
+        }
+        .rectangleBlack {
+            width: 70%;
+            height: 250px;
+            left:0px;
+            right: 0px;
+            background: black;
+            position:absolute;
+        }
+        .rectangleWhite {
+            width: 40%;
+            height: 150px;
+            background: white;
+            position: fixed;
+            right: 30%;
+            top: 50px
+        }
+        .rectangleGreen {
+            width: 40%;
+            height: 75px;
+            background: green;
+            position: relative;
+            top: 75px
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="rectangleBlack" style="margin-left: auto;margin-right: auto"></div>
+    <div class="rectangleWhite" style="border: 3px solid black;"></div>
+    <div class="rectangleGreen" style="border: 3px solid white; margin-left: 15%; margin-right: auto;"></div>  
+</div>
+</body>
+</html>

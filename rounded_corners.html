@@ -1,0 +1,57 @@
+<!--Gör ett element med kantlinjer och rundade hörn. Gör ett till element, som bara får rundade hörn när man hovrar över det. Tips: :hover, border-radius: ?px;-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Rounding a corner</title>
+    <link href="https://fonts.googleapis.com/css?family=Creepster" rel="stylesheet">
+    <style>
+        .cornerToRound:hover {
+            border-radius: 25px;
+            border: 2px solid #D00000;
+            display: inline-block;
+            padding: 5px;
+        }
+
+        body {
+            background-color: black;
+            background-image: url(./content/img/corners_background.jpeg);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            text-align: center;
+        }
+
+        h1 {
+            color: darkred;
+            text-align: center;
+            font-family: Creepster;
+            font-size: 6em;
+        }
+
+        p {
+            color: red;
+            display: inline-block;
+            font-family: Creepster;
+            font-size: 2em;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>Corners</h1>
+    <div style="border-radius: 25px; border: 5px solid #D00000; display: inline-block; padding: 5px;">
+        <a href="http://www.imdb.com/title/tt0033045/">
+            <p>What you might find around the corner</p>
+        </a>
+    </div>
+    <br>
+    <a href="http://www.imdb.com/title/tt0038453/">
+        <p class="cornerToRound" style=" padding: 5px; border: solid 5px #D00000;">A very dark corner</p>
+    </a>
+</body>
+
+</html>
